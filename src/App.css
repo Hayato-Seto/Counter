@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.App .counterList .ctrList .ctrSetting .setting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  background-color: #ead3fd;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .counterList .ctrList .ctrSetting .setting span{
+  margin: 0px 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .counterList .ctrList .ctrs .btnCom{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 30px 10vw;
+  border: solid 1px black;
+  border-radius: 15px;
+  padding: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.App .counterList .ctrList .ctrs .btnCom .btnName{
+  margin-right: 150px ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .counterList .ctrList .ctrs .btnCom .btnName .name{
+  height: 20px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: solid 1px transparent;
+  border-bottom: solid 2px black;
+  margin: 5px 0px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn{
+  margin: 5px 0px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn button {
+  font-size: 15px;
+  cursor: pointer ;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 7px;
+  outline: none;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn button:active {
+  transform: translateY(4px);
+  border-bottom: none;
+  margin-bottom: 4px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn button.up{
+  background: #fca23c;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn button.down{
+  background: #668ad8;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn button.reset{
+  background: #fd4040;
+}
+.App .counterList .ctrList .ctrs .btnCom .btn span{
+  margin: 0px 15px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btnValue{
+  margin: 5px 0px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btnValue span{
+  padding: 0px 4px;
+  margin: 0px 6px;
+}
+.App .counterList .ctrList .ctrs .btnCom .btnValue span.spCount{
+  border-bottom: solid 2px #e9603d;
+}
+.App .counterList .ctrList .ctrs .btnCom .btnValue span.spProb{
+  border-bottom: solid 2px #3daae9;
+}
+.App .counterList .ctrList .ctrs .btnCom .btnValue span.spInterval{
+  border-bottom: solid 2px #3d4ee9;
 }
