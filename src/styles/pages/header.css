@@ -1,0 +1,101 @@
+.headMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.headMenu .name, .headMenu .serch, .headMenu .partition{
+    margin: 0px 5px;
+}
+
+.headMenu .title{
+    padding: 0px 5px 0px 10px;
+    font-size: 27px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.headMenu .name{
+    outline: none;
+    border-color: #6ed6ff;
+    border-radius: 7px;
+    border-style: solid;
+    height: 20px;
+}
+
+.headMenu .serch{
+    height: 26px;
+    text-decoration: none;
+    text-align:center;
+    background: #19beff;
+    color:#FFFFFF;
+    font-weight:bold;
+    border-radius:10px;
+    border-color: transparent;
+}
+
+.headMenu .toHome, .headMenu .toCreate{
+    padding: 0px 5px;
+    color: #19beff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.headMenu .toHome:hover, .headMenu .toCreate:hover{
+    background-color: #6ed6ff;
+    color: #FFFFFF;
+}
+
+.headMenu .partition{
+    font-size: 10px;
+}
+
+.headMenu .check {
+    position: fixed;
+    right: -250px;
+    color: #FFFFFF;
+    background-color: #ff3c1d;
+}
+
+.headMenu .checkActive{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    background-color: #ff3c1d;
+    transition: 0.4s;
+    padding: 0px 4px;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.headMenu .alertButton{
+    font-weight: bold;
+    padding: 0px 3px;
+    border: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+    .headMenu .title, .headMenu .partition{
+        width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        color: transparent;
+    }
+
+    .headMenu .name{
+        position: fixed;
+        width: 25%;
+        transition: 0.4s;
+    }
+
+    .headMenu .name:hover{
+        width: 150px;
+    }
+
+    .headMenu .serch{
+        margin: 0px 5px 0px 30%;
+    }
+}

@@ -1,0 +1,39 @@
+.create .save{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    background-color: #e8ffd2;
+}
+
+.create .save button{
+    margin: 0px 5px 0px 10px;
+    text-decoration: none;
+    text-align:center;
+    background: #00ff00;
+    color:#FFFFFF;
+    font-weight:bold;
+    border-radius:10px;
+    border-color: transparent;
+}
+
+.create .save button:hover{
+    background-color: #FFFFFF;
+    color: #00ff00;
+}
+
+.create .save label{
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.create .save label:hover{
+    color: #00ff00;
+}
+
+.create .save label input{
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.notFound .toHome{
+    padding: 0px;
+    color: #19beff;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.notFound .toHome:hover{
+    background-color: transparent;
+    color: #1496c9;
+}

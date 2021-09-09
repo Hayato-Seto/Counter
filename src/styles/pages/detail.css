@@ -1,0 +1,70 @@
+.detail .update{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    background-color: #e8ffd2;
+}
+
+.detail .update button{
+    margin: 0px 5px 0px 10px;
+    text-decoration: none;
+    text-align:center;
+    background: #00ff00;
+    color:#FFFFFF;
+    font-weight:bold;
+    border-radius:10px;
+    border-color: transparent;
+}
+
+.detail .update button:hover{
+    background-color: #FFFFFF;
+    color: #00ff00;
+}
+
+.detail .update label{
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.detail .update label:hover{
+    color: #00ff00;
+}
+
+.detail .update label input{
+    cursor: pointer;
+}
+
+.detail .update .password{
+    margin: 0px 10px;
+    outline: none;
+    border-color: transparent;
+    border-radius: 7px;
+}
+
+.detail .setting{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    background-color: #ead3fd;
+}
+
+.detail .setting span{
+    margin: 0px 0px 0px 10px;
+}
+
+@media screen and (max-width: 402px) {
+    .detail .update {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail .update button, .detail .update label, .detail .update .password{
+        margin: 5px 5px 5px 10px;
+    }
+}

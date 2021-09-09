@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[ここで動いています](https://imosite-counter.web.app/)
 
-## Available Scripts
+## ver.0.0.0
 
-In the project directory, you can run:
+### 追加機能
 
-### `npm start`
+**ルーティング**
+**保存機能**
+**レスポンシブ**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 改善点
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**データの扱いが配列重視だったところをオブジェクト重視に変更**
 
-### `npm test`
+ネストされた配列はfirestoreに突っ込めない（documentには出来ると書いてあるが実際に試すとinvalid errorになる）
+firestoreにデータを入れる際、データをオブジェクトにして複数のデータを一括で登録するため配列はオブジェクトの子要素となり強制的にネストされる
+配列重視の処理ではこのエラーを通過できないため、オブジェクト重視に変更
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**stateをオブジェクト化し、一括管理**
 
-### `npm run build`
+上記のfirestore関連のついでで増えすぎて不格好だったstateをまとめた
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**componentsとpageの分離**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+componentsは画面を構成する要素、pageはstateを保持する役割で分担
+ついでにcssもcomponent, pageごとに分離
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**boot-strap採用**
 
-### `npm run eject`
+### 問題点
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**boot-strapのcssがimportできない**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+仕方ないからGitHubからそれっぽいのをコピペ
+汎用的なやり方ではないから心配
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**カウント数などが可変幅なためレスポンシブが微妙**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**excelスプレッドシートでいい**
 
-## Learn More
+みんなで共有して編集できるものを目指してたけどすでに上位互換があることに気づいてしまった
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**cssデザインのセンス**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+どうしようもない
+
+
+
+## ver.-1.0.0 -initial comit
+仮push
+とりあえずボタンが動いたのでdeploy

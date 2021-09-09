@@ -1,0 +1,100 @@
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 10vw;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 16px;
+  }
+  .counter .btnName{
+    margin-right: 150px ;
+  }
+  .counter .btnName .name{
+    height: 20px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: solid 1px transparent;
+    border-bottom: solid 2px black;
+    margin: 5px 0px;
+  }
+  .counter .btn{
+    margin: 5px 0px;
+  }
+  .counter .btn button {
+    font-size: 15px;
+    cursor: pointer ;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 7px;
+    outline: none;
+    margin: 0px 15px;
+  }
+  .counter .btn button:active {
+    transform: translateY(4px);
+    border-bottom: none;
+    margin-bottom: 4px;
+  }
+  .counter .btn button.up{
+    background: #fca23c;
+  }
+  .counter .btn button.down{
+    background: #668ad8;
+  }
+  .counter .btn button.reset{
+    background: #fd4040;
+  }
+  .counter .btnValue{
+    margin: 5px 0px;
+  }
+  .counter .btnValue span{
+    padding: 0px 4px;
+    margin: 0px 6px;
+  }
+  .counter .btnValue span.spCount{
+    border-bottom: solid 2px #e9603d;
+  }
+  .counter .btnValue span.spProb{
+    border-bottom: solid 2px #3daae9;
+  }
+  .counter .btnValue span.spInterval{
+    border-bottom: solid 2px #3d4ee9;
+  }
+
+  @media screen and (max-width: 468px) {
+    .counter .btnName {
+      margin: 0;
+      width: 100%;
+    }
+
+    .counter .btnName .name {
+      margin: 5px 3%;
+    }
+
+    .counter .btn button {
+      margin: 0px 5px;
+    }
+
+    .counter .btnValue {
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .counter .btn {
+      width: 100%;
+    }
+
+    .counter .btn button {
+      margin: 0px 1.9%;
+      font-size: 10%;
+      padding: 4% 6%;
+    }
+  }
+  

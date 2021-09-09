@@ -1,0 +1,37 @@
+.counterSetting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  background-color: #ead3fd;
+}
+
+.counterSetting span, .counterSetting .password, .counterSetting .amount, .counterSetting .trust{
+  margin: 0px 5px;
+}
+
+.counterSetting .name{
+  margin: 0px 5px 0px 10px;
+}
+
+.counterSetting .name, .counterSetting .password, .counterSetting .amount, .counterSetting .trust{
+  outline: none;
+  border-color: transparent;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 720px) {
+  .counterSetting{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    background-color: #ead3fd;
+  }
+
+  .counterSetting .name, .counterSetting span, .counterSetting .password, .counterSetting .amount, .counterSetting .trust{
+    margin: 5px 5px 5px 10px;
+  }
+}

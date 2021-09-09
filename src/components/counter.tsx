@@ -1,5 +1,6 @@
 import React from 'react';
-import { Value, HandleFunc } from './values';
+import '../styles/components/counter.css'
+import { Value, HandleFunc } from '../initial';
 
 type Props = {
   value: Value
@@ -8,7 +9,7 @@ type Props = {
 
 const Counter: React.FC<Props> = ({ value, handleFunc }) => {
   return (
-    <div className='btnCom'>
+    <div className='counter'>
       <div className='btnName'>
         <input
           type='text'
@@ -20,23 +21,23 @@ const Counter: React.FC<Props> = ({ value, handleFunc }) => {
         />
       </div>
       <div className='btn'>
-        <span><button
+        <button
           className='up'
           onClick={() => { handleFunc.handleCountUp(value.id) }}
-        >UP</button></span>
-        <span><button
+        >UP</button>
+        <button
           className='down'
           onClick={() => { handleFunc.handleCountDown(value.id) }}
-        >DOWN</button></span>
-        <span><button
+        >DOWN</button>
+        <button
           className='reset'
           onClick={() => { handleFunc.handleCountReset(value.id) }}
-        >RESET</button></span>
+        >RESET</button>
       </div>
       <div className='btnValue'>
         <span className='spCount'>Count：{value.count}</span>
         <span className='spProb'>確率：{value.probability}%</span>
-        <span className='spInterval'>区間：{value.interval[0]}% ~ {value.interval[1]}%</span>
+        <span className='spInterval'>区間：{value.intervalLow}% ~ {value.intervalHigh}%</span>
       </div>
     </div>
   );
